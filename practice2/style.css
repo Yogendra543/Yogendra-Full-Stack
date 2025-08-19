@@ -1,0 +1,90 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.banking-container {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.balance-card {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  box-shadow: 0 6px 15px rgba(102,126,234,0.4);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+button {
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1 1 130px;
+  max-width: 150px;
+  box-shadow: 0 4px 10px rgba(102,126,234,0.3);
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+button.withdraw {
+  background: #e53e3e;
+  box-shadow: 0 4px 10px rgba(229,62,62,0.3);
+}
+
+button.withdraw:hover {
+  background: #c53030;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .banking-container {
+    padding: 1.5rem 2rem;
+  }
+  .balance-card {
+    font-size: 1.8rem;
+    padding: 1.5rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
