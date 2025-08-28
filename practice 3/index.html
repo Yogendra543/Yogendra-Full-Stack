@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard with CSS Grid Layout and Theme Switching</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <button class="theme-switch" onclick="toggleTheme()">Switch Theme</button>
+  </header>
+
+  <div class="sidebar">
+    <a href="#">Home</a>
+    <a href="#">Users</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <main>
+    <h2>Welcome</h2>
+    <p>This is your dashboard main content area.</p>
+  </main>
+
+  <footer>
+    <p>© 2025 Admin Dashboard</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.dataset.theme = document.body.dataset.theme === "dark" ? "light" : "dark";
+    }
+  </script>
+</body>
+</html>
